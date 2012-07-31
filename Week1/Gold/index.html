@@ -1,0 +1,385 @@
+<!Doctype html>
+<!--Desire Revon-->
+<!--MIU: Project 3-->
+<!--Term:1206-->
+<!--I Remember Mobile Application--> 
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+
+	<title>IREM</title>
+
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+
+	<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+	<link rel="stylesheet" href="CSS/style.css" />
+
+
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+
+</head>
+<body>
+
+
+
+<!--//////////// First Page : Log In Validation Form (Not Required to utilize app) ///////////////////////////-->
+
+<!-- Logo Page Header -->
+   
+<section data-role="page" id="logo">
+
+        <div data-role="header">
+            <h1>IREM</h1>
+        </div>
+        
+        </br>
+        
+        <!-- Firs Page User Will See Feature -->
+        
+        <div style="text-align:center">
+             <a href="#home"><img src="images/remLogo.png"/></a>
+        </div>
+         </div>
+         
+         
+       <!--*Footer*-->
+	<div data-role="footer">
+	 	<h1>IREM</h1>
+	</div>
+</section>
+
+ 
+<!--//////////// Home Page : Search Notes, Creat A New Note, View About app and News Page ///////////////////////////////////////-->
+
+		<!-- Start of Home Page -->
+		<div data-role="page" id="home" data-add-back-btn="true"> 
+
+		<!-- Home Page Header -->
+		<div data-role="header">
+			<h1>IREM</h1>
+		</div>
+
+		<!-- Feature -->
+		<div>
+				<a href="#signin" rel="external" ><img class="imgSize" src="images/Feature.png" /></a>
+		</div>
+
+		<!-- Home Content -->
+		<div data-role="content">
+            <ul data-role="listview" data-filter="true" data-theme="a">
+                <li>
+                    <a href="#friendtype" class="has-icon" >
+                        <img src="images/Friend Type.png" class="ui-li-icon"/>
+                        <h3>Friend Type</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#prioritytype" class="has-icon" >
+                        <img src="images/Priority Type.png" class="ui-li-icon"/>
+                        <h3>Priority Type</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#notetype" class="has-icon" >
+                        <img src="images/Note Type.png" class="ui-li-icon"/>
+                        <h3>Note Type</h3>
+                    </a>
+                </li>
+            </ul>
+		</div>
+
+		<!-- Home Page Footer -->
+			   <div data-role="navbar" data-position="fixed">
+				  <ul>
+					<li><a href="/Users/desiregardner/Desktop/MIU/Week4/Gold/about.html" data-icon="info"  data-iconpos="left"  >About</a></li>
+				    <li><a href="#savenote" data-icon="plus" data-iconpos="top" data-theme="e" >Note</a></li>
+					<li><a href="/Users/desiregardner/Desktop/MIU/Week4/Gold/news.html" data-icon="star"  data-iconpos="left" >News</a></li>
+					<li><a href="/Users/desiregardner/Desktop/MIU/Week4/Bronze/index.html" data-icon="plus" data-iconpos="left" >Bronze</a></li>
+				  </ul>
+			  </div>
+		 </div>
+	</div>
+
+<!--//////////// Search By Type : Search Notes ///////////////////////////////////////////////////////////////////////-->
+
+<!--//////////// Friend Type ///////////////////////////////////////////////////////////////////////////////////////-->
+
+	<!-- Friend Type Page Header-->
+        <div data-role="page" id="friendtype" data-add-back-btn="true">
+
+        	<div data-role="header">
+            	<h1>Friend Type</h1>
+        	</div>
+        
+       <!-- Friend Type Page Content -->
+            <div data-role ="collapsible-set">
+            	<div data-role="content">
+                	<ul data-role="listview" data-filter="true">
+                		
+                		<div data-role="collapsible" data-collapsed="true">
+                    		<h3>Boyfriend</h3>
+                    		<p>Jack favorite color is red</p>
+                		</div>
+
+						<div data-role="collapsible" data-collapsed="true">
+                   	 		<h3>Girlfriend</h3>
+                    		<p>Pick up new shoes at shoe depot</p>
+            			</div>
+            			
+            			<div data-role="collapsible" data-collapsed="true">
+                    		<h3>Parent</h3>
+                    		<p>Birhtday is Friday</p>
+            			</div>
+            	
+            			<div data-role="collapsible" data-collapsed="true">
+                    		<h3>Friend</h3>
+                   			<p>Dont forget to return grandmothers pearls</p>
+            			</div>
+            	
+            			<div data-role="collapsible" data-collapsed="true">
+                    		<h3>Fiance</h3>
+                    		<p>Ring size is 7</p>
+            			</div>
+            			
+            			<div data-role="collapsible" data-collapsed="true">
+                    		<h3>Sibling</h3>
+                    		<p>Return alarm clock</p>
+            			</div>
+            			
+            			<div data-role="collapsible" data-collapsed="true">
+                    		<h3>Other</h3>
+                   	 		<p>Homework due Thursday</p>
+            			</div>
+           			 </ul>
+        		</div>
+    	
+    		
+    	<!-- Friend Page Footer -->
+			   <div data-role="navbar" data-position="fixed" data-theme="a">
+				  <ul>
+					<li><a href="/Users/desiregardner/Desktop/MIU/Week4/Gold/about.html" data-icon="info"  data-iconpos="left"  >About</a></li>
+				    <li><a href="#savenote" data-icon="plus" data-iconpos="top" data-theme="e" >Note</a></li>
+					<li><a href="/Users/desiregardner/Desktop/MIU/Week4/Gold/news.html" data-icon="star"  data-iconpos="left" >News</a></li>
+					<li><a href="/Users/desiregardner/Desktop/MIU/Week4/Bronze/index.html" data-icon="plus" data-iconpos="left" >Bronze</a></li>
+				  </ul>
+			  </div>
+		 </div>
+	</div>
+
+<!--//////////// Priority Type ////////////////////////////////////////////////////////////////////////////////////////-->
+
+		 <!-- Priority Type Page Header-->
+    	 <div data-role="page" id="prioritytype" data-add-back-btn="true">
+        
+        <!--Header-->
+        <div data-role="header">
+            <h1>Priority Type</h1>
+        </div>
+        
+        <!-- Priorirty Type Page Content -->
+        <div data-role ="collapsible-set">
+            <div data-role="content">
+                <ul data-role="listview" data-filter="true" >
+                	<div data-role="collapsible" data-collapsed="true">
+                   		 <h3>Really Important</h3>
+                    	 <p>David</p>
+                         <p>Ring size is 9</p>
+                	</div>
+
+					<div data-role="collapsible" data-collapsed="true">
+                         <h3>Minor</h3>
+                         <p>Sibling</p>
+                         <p>Return Alarm Clock</p>
+            	   </div>
+               </ul>
+           </div>
+       </div>
+  
+			   <!-- Priority Page Footer -->
+			   <div data-role="navbar" data-position="fixed">
+				  <ul>
+					<li><a href="/Users/desiregardner/Desktop/MIU/Week4/Gold/about.html" data-icon="info"  data-iconpos="left"  >About</a></li>
+				    <li><a href="#savenote" data-icon="plus" data-iconpos="top" data-theme="e" >Note</a></li>
+					<li><a href="/Users/desiregardner/Desktop/MIU/Week4/Gold/news.html" data-icon="star"  data-iconpos="left" >News</a></li>
+					<li><a href="/Users/desiregardner/Desktop/MIU/Week4/Bronze/index.html" data-icon="plus" data-iconpos="left"  >Bronze</a></li>
+				  </ul>
+			  </div>
+		 </div>
+	</div>
+	
+<!--//////////// Note Type ////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- Note Page Header-->
+    	<div data-role="page" id="notetype" data-add-back-btn="true">
+    
+	<!--Note Type Header-->
+        <div data-role="header">
+            <h1>Note Type</h1>
+        </div>
+        
+       <!-- Note Type Page Content -->
+        <div data-role ="collapsible-set">
+            <div data-role="content">
+            	 <ul data-role="listview" data-filter="true" data-theme="e">
+                     <li>
+                        <a href="recent.html" class="has-icon" >
+                        <img src="images/Recent.png" class="ui-li-icon"/>
+                        <h3>Recent</h3>
+                        <span class="ui-li-count">20</span>
+
+                       </a>
+                    </li>
+                    
+                    <li>
+                       <a href="underCon.html" class="has-icon" >
+                        <img src="images/Favorites.png" class="ui-li-icon"/>
+                        <h3>Favorites</h3>
+                        <span class="ui-li-count">10</span>
+					   </a>
+                    </li>
+                	
+                	<li>
+                        <a href="underCon.html" class="has-icon" >
+                        <img src="images/Shared.png" class="ui-li-icon"/>
+                        <h3>Shared</h3>
+                        <span class="ui-li-count">8</span>
+					    </a>
+                    </li>
+                
+                     <li>
+                        <a href="underCon.html" class="has-icon" >
+                        <img src="images/Trash.png" class="ui-li-icon"/>
+                        <h3>Trash</h3>
+                        <span class="ui-li-count">12</span>
+					    </a>
+                     </li>
+                 </ul>
+			</div>
+        </div>
+
+	<!-- Note Page Footer -->
+			   <div data-role="navbar" data-position="fixed">
+				  <ul>
+					<li><a href="/Users/desiregardner/Desktop/MIU/Week4/Gold/about.html" data-icon="info"  data-iconpos="left"  >About</a></li>
+				    <li><a href="#savenote" data-icon="plus" data-iconpos="top" data-theme="e" >Note</a></li>
+					<li><a href="/Users/desiregardner/Desktop/MIU/Week4/Gold/news.html" data-icon="star"  data-iconpos="left"  >News</a></li>
+					<li><a href="/Users/desiregardner/Desktop/MIU/Week4/Bronze/index.html" data-icon="plus" data-iconpos="left"  >Bronze</a></li>
+				  </ul>
+			  </div>
+		 </div>
+	</div>
+
+<!--//////////// Create New Note ///////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!--Start of Additem Page-->
+        <!-- Save Note Page Header -->
+    <div data-role="page" id="savenote" data-add-back-btn="true">
+
+        <div data-role="header">
+            <h1>Save Note</h1>
+        </div>
+
+    <!-- Save Note Page Content -->
+        
+        <div data-role="content" data-theme="a">
+        
+        	<form action="" method="post" id="savenoteform" >
+					<strong><p>Ready to save a note? Fill out the form and hit the Save Note button below.</p></strong>
+					<p>Field with ( * ) are required.</p>
+			
+			
+					
+					<div data-role="fieldcontain">
+						<label for="friend" class="select"class="required" >*Choose A Friend:</label>
+						<select name="friend" id="friend" data-mini="true">
+							<option value="boy">Boyfriend</option>
+							<option value="girl">Girlfriend</option>
+							<option value="par">Parent</option>
+							<option value="fri">Friend</option>
+							<option value="fi">Fiance</option>
+							<option value="sib">Sibling</option>
+							<option value="oth">Other</option>
+						</select>
+					</div>
+			
+						<div data-role="fieldcontain">
+							<fieldset data-role="controlgroup">
+							<legend>Did you select the right friend?</legend>
+								<input type="checkbox" name="checkbox-1" id="fav" class="custom" checked="checked"/>
+								<label for="fav">Yes</label>
+							</fieldset>
+						</div>
+				
+						<div>
+							<label for="notes">Note:</label>
+							<textarea name="notes" id="notes" placeholder="Your note goes here" class="required"></textarea>
+						</div>
+			
+			
+						<fieldset data-role="controlgroup">
+							<legend>How importance is this?</legend>
+							<input type="radio" name="radio-choice-1" id="radio-choice-1" value="choice-1" checked="checked" />
+							<label for="radio-choice-1">Really Important!</label>
+				
+							<input type="radio" name="radio-choice-1" id="radio-choice-2" value="choice-2"  />
+							<label for="radio-choice-2">I cant remember everything.</label>
+						</fieldset>
+			
+						<div data-role="fieldcontain">
+	        		      <label for="reminder">*Remind Me This Many Times:</label>
+	        		      <input type="range" name="reminder" id="reminder" placeholder="0" min="1" max="10"/>
+	        
+							<label for="date">*On This Day:</label>
+							<input type="text" name="date" id="date" placeholder="MM/DD/YY" class="required date" />
+						</div>
+		                     
+					<input type="submit" value="Save Note" data-theme="e" />
+	        				<div class="ui-grid-a" style="text-align:center">
+                    		<div class="ui-block-a">
+                     			<a href="displayLink" id="displayLink" data-role="button" data-mini="true" data-theme="a" data-ajax="false">Display</a>
+                   		    </div>
+                    
+                    <div class="ui-block-b">
+                        <a href="clearLink" id="clearLink" data-role="button" data-mini="true" data-theme="a" data-ajax="false">Clear</a>
+                        <a href="addNew" id="addNew" style="display:none;" data-ajax="false">Add New Note</a>
+					</div>
+				</form>
+    		</div>
+     <!-- End of Note Form -->
+     
+     <!-- Save Type Footer -->
+		<div data-role="footer">
+			   <div data-role="navbar" data-position="fixed">
+				  <ul>
+					<li><a href="/Users/desiregardner/Desktop/MIU/Week4/Gold/about.html" data-icon="info"  data-iconpos="left"  >About</a></li>
+					<li><a href="/Users/desiregardner/Desktop/MIU/Week4/Gold/news.html" data-icon="star"  data-iconpos="left"  >News</a></li>
+					<li><a href="/Users/desiregardner/Desktop/MIU/Week4/Bronze/index.html" data-icon="plus" data-iconpos="left"  >Bronze</a></li>
+				  </ul>
+			  </div>
+		 </div>
+	</div>
+	
+	
+
+<!--//////////// JAVASCRIPT ///////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+       <!-- JavaScript under here -->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+        <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+        <script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
+        <script src="js/main.js" type="text/javascript"></script>
+      
+
+	</body>
+</html>
