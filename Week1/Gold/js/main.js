@@ -1,11 +1,11 @@
-// JQUERY VALIDATION FORM
+//Form: Note Page
 				var parseNoteForm = function(data) {
 //uses form data here;
 
 //console.log(data);
 		};
 
-		$(document).bind('pageinit', function(){
+		$(document).ready('pageinit', function(){
 
 			var nform = $('#noteform');
 
@@ -19,6 +19,34 @@
 			});
 
 		});
+		
+		
+		$("#logo").on('pageinit', function){
+		   //code for logo goes here
+		   
+		   
+		}
+		
+		$("#home").on('pageinit', function){
+		   //code for home goes here
+		
+		}
+		
+		$("#friendtype").on('pageinit', function){
+		   //code for friendtype goes here
+		
+		}
+		
+		$("#prioritytype").on('pageinit', function){
+		   //code for prioritytype goes here
+		
+		}
+		
+		$("#notetype").on('pageinit', function){
+		   //code for notetype goes here
+		
+		}
+
 
  
      //Create select field element and populate with options.
