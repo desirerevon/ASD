@@ -326,11 +326,11 @@ $(document).bind('pageinit', function(){
      makeField();
   
   
-	var save = ge("submit");
+	var save = $("submit");
 	save.addEventListener("click", validate);
      
-	var display = ge("display");
+	var display = $("display");
 	displayLink.addEventListener("click", getData);
 
-	var clear = ge("clear");
+	var clear = $("clear");
 	clearLink.addEventListener("click", clearLocal);
