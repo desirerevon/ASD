@@ -20,14 +20,8 @@
 
 		});
 
-  	//Get Element By Id Function.
- 	function $(x){
-         var theElement = $(x);
-         return theElement;
-     };
-     
-     
-  	//Create select field element and populate with options.
+ 
+     //Create select field element and populate with options.
      function makeCats() {
          var formTag = $("form"),
              selectLi = $('<select>'),
