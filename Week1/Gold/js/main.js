@@ -5,7 +5,7 @@
 //console.log(data);
 		};
 
-		$(document).ready('pageinit', function(){
+		$("#").on('pageinit', function(){
 
 			var nform = $('#noteform');
 
