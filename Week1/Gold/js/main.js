@@ -21,31 +21,31 @@
 		});
 		
 		
-		$("#logo").on('pageinit', function){
-		   //code for logo goes here
-		   
-		   
-		}
-		
-		$("#home").on('pageinit', function){
-		   //code for home goes here
-		
-		}
-		
-		$("#friendtype").on('pageinit', function){
-		   //code for friendtype goes here
-		
-		}
-		
-		$("#prioritytype").on('pageinit', function){
-		   //code for prioritytype goes here
-		
-		}
-		
-		$("#notetype").on('pageinit', function){
-		   //code for notetype goes here
-		
-		}
+		// $("#logo").on('pageinit', function){
+// 		   //code for logo goes here
+// 		   
+// 		   
+// 		}
+// 		
+// 		$("#home").on('pageinit', function){
+// 		   //code for home goes here
+// 		
+// 		}
+// 		
+// 		$("#friendtype").on('pageinit', function){
+// 		   //code for friendtype goes here
+// 		
+// 		}
+// 		
+// 		$("#prioritytype").on('pageinit', function){
+// 		   //code for prioritytype goes here
+// 		
+// 		}
+// 		
+// 		$("#notetype").on('pageinit', function){
+// 		   //code for notetype goes here
+// 		
+// 		}
 
 
  
@@ -331,16 +331,11 @@
     		 importanceValue,
     		 //favoriteValue = "No",
     	     errMsg = $("#errors");
-     ;
     
     makeField();
   
-  
-	var save = $("#save");
-	save.on("click", validate);
-     
-	var displayLink = $("#displayLink");
-	displayLink.on("click", getData);
+$("#displayLink").on('click', getData);
+$("#clear").on('click', clearLocal);
+$('#submit').on('click', saveData);
 
-	var clearLink = $("#clearLink");
-	clearLink.on("click", clearLocal);
+}
