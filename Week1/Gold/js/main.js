@@ -5,7 +5,7 @@
 //console.log(data);
 		};
 
-		$("#note").on('pageinit', function(){
+		$(document).bind('pageinit', function(){
 
 			var nform = $('#noteform');
 
@@ -50,7 +50,7 @@
 
  
      //Create select field element and populate with options.
-     function makeField() {
+    var makeField= function() {
          var formTag = $("form"),
              selectLi = $('<select>'),
              makeSelect = $('<select>');
@@ -62,7 +62,6 @@
               makeOption.text = optText;
               makeSelect.append(makeOption);    
           }
-          //selectLi.append(makeSelect);
       };
   	
   	//Find value of selected radio button.
@@ -144,7 +143,7 @@
 						autoFillData();
 }
          
-         //Write Data Local-->Browser
+//Write Data Local-->Browser
          var makeDiv = $("<div>");
          makeDiv.attr("id", "items");
          var makeList = $("<ul>");
@@ -153,21 +152,21 @@
          // Set 'items' display
          $("#items").show();
          	 for(var i = 0, len=localStorage.length; i < len; i++){
-             	var makeli = $("<li>");
+             	var makeLi = $("<li>");
              	var linksLi = $("<li>");
-             	makeList.append(makeli);
+             	makeList.append(makeLi);
              	var key = localStorage.key(i);
              	var value = localStorage.getItem(key);
              //Convert the string from local storage value back to an object using JSON.parse()
              	var obj = JSON.parse(value);
              	var makeSubList = $("<ul>");
-             	makeli.append(makeSubList);
+             	makeLi.append(makeSubList);
 //getImage(obj.friend[1], makeSubList);
              for(var n in obj){
-             	var makeSubli = $("<li>");
-             	makeSubLi.append(makeSubli);
+             	var makeSubLi = $("<li>");
+             	makeSubList.append(makeSubLi);
              	var optSubText = obj[n][0] + " " + obj[n][1];
-             	makeSubli.text = (optSubText);
+             	makeSubLi.text = (optSubText);
              	makeSubLi.append(linksLi); 
              }
              	makeItemLinks(localStorage.key(i), linksLi); //Create edit and delete buttons/links for each item in local storage.
@@ -247,9 +246,13 @@
 			save.one("click", function(){
     	 storeData(thiskey);
   });
+  
+  				editSubmit.attr("key", this.key);
+  	}
+
 		
 		
-		function clearLocal(){
+		var clearLocal=function(){
  		if( localStorage.length === 0 ){
  			alert( "There are no saved notes." );
  		}else{
@@ -269,7 +272,7 @@
  		}else{
  			alert("Note was not deleted");
  		}
- 	};
+ 	}
  
     	
 //      	//Validate form fields to reuse storeData function, modify and edit not save
@@ -327,9 +330,9 @@
 //      }
 
      //Variable Defaults
-     var friendType = ["--Choose Friend--", "Girlfriend", "Boyfriend", "Fiance", "Friend", "Sibling", "Parent", "Other"],
-    		 importanceValue,
-    		 //favoriteValue = "No",
+     var friendType = ["--Choose Friend--", "Girlfriend", "Boyfriend", "Fiance", "Friend", "Sibling", "Parent", "Other"];
+    		var importanceValue;
+    	    favoriteValue = "No",
     	     errMsg = $("#errors");
     
     makeField();
@@ -341,4 +344,4 @@ var clearLink = $('#clearLink');
 clearLink.on("click", clearLocal);
 
 var submit = $("#save");
-submit.on("click", saveData);
+submit.on("click", storeData);
