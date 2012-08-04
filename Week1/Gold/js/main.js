@@ -50,7 +50,7 @@
 
  
      //Create select field element and populate with options.
-     function makeCats() {
+     function makeField() {
          var formTag = $("form"),
              selectLi = $('<select>'),
              makeSelect = $('<select>');
