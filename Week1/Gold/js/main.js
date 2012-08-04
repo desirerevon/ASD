@@ -5,7 +5,7 @@
 //console.log(data);
 		};
 
-		$("#").on('pageinit', function(){
+		$("#note").on('pageinit', function(){
 
 			var nform = $('#noteform');
 
@@ -88,13 +88,13 @@
       function toggleControls(n) {
          switch(n){
              case "on":
-             	 $("#savenoteform").hide();
+             	 $("#noteform").hide();
                  $("#clearLink").show();
                  $("#displayLink").hide();
                  $("#addNew").show();
                  break;
              case "off":
-             	 $("#savenoteform").show();
+             	 $("#noteform").show();
                  $("#clearLink").show();
                  $("#displayLink").show();
                  $("#addNew").hide();//addNew
@@ -149,7 +149,7 @@
          makeDiv.attr("id", "items");
          var makeList = $("<ul>");
          makeDiv.append(makeList);
-         $("#listP").append(makeDiv);
+         $("#listN").append(makeDiv);
          // Set 'items' display
          $("#items").show();
          	 for(var i = 0, len=localStorage.length; i < len; i++){
@@ -260,7 +260,7 @@
  		}
  	};
  	
- 	    	function deleteItem(){
+ 	    function deleteItem(){
  		var ask = confirm("Would you like to delete this note?");
  		if(ask){	
  			localStorage.removeItem(this.key);
@@ -269,9 +269,9 @@
  		}else{
  			alert("Note was not deleted");
  		}
- 	}
+ 	};
  
-    	// 
+    	
 //      	//Validate form fields to reuse storeData function, modify and edit not save
 //     	function validate(e){ // e stands for event data
 //     		var getFriend   = $("#friends");
@@ -334,8 +334,11 @@
     
     makeField();
   
-$("#displayLink").on('click', getData);
-$("#clear").on('click', clearLocal);
-$('#submit').on('click', saveData);
+var displayLink = $('#displayLink');
+displayLink.on("click", getData);
 
-}
+var clearLink = $('#clearLink');
+clearLink.on("click", clearLocal);
+
+var submit = $("#save");
+submit.on("click", saveData);

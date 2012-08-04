@@ -102,8 +102,9 @@
 		<!-- Home Page Footer -->
 		 <div data-role="navbar" data-position="fixed">
 				  <ul>
+				  	<li><a href="#" data-icon="home" data-theme="a">Home</a></li>
 					<li><a href="#about" data-icon="info"  data-iconpos="left"  >About</a></li>
-				    <li><a href="#note" data-icon="plus" data-iconpos="top" data-theme="e" >Note</a></li>
+				    <li><a href="#note" data-icon="plus" data-iconpos="top">Note</a></li>
 					<li><a href="#news" data-icon="star"  data-iconpos="left"  >News</a></li>
 				  </ul>
 			  </div>
@@ -169,7 +170,7 @@
  	<div data-role="navbar" data-position="fixed">
 				  <ul>
 					<li><a href="#about" data-icon="info"  data-iconpos="left"  >About</a></li>
-				    <li><a href="#note" data-icon="plus" data-iconpos="top" data-theme="e" >Note</a></li>
+				    <li><a href="#note" data-icon="plus" data-iconpos="top" >Note</a></li>
 					<li><a href="#news" data-icon="star"  data-iconpos="left"  >News</a></li>
 				  </ul>
 			  </div>
@@ -210,7 +211,7 @@
  				<div data-role="navbar" data-position="fixed">
 				  <ul>
 					<li><a href="#about" data-icon="info"  data-iconpos="left"  >About</a></li>
-				    <li><a href="#note" data-icon="plus" data-iconpos="top" data-theme="e" >Note</a></li>
+				    <li><a href="#note" data-icon="plus" data-iconpos="top">Note</a></li>
 					<li><a href="#news" data-icon="star"  data-iconpos="left"  >News</a></li>
 				  </ul>
 			  </div>
@@ -272,7 +273,7 @@
 			   <div data-role="navbar" data-position="fixed">
 				  <ul>
 					<li><a href="#about" data-icon="info"  data-iconpos="left"  >About</a></li>
-				    <li><a href="#note" data-icon="plus" data-iconpos="top" data-theme="e" >Note</a></li>
+				    <li><a href="#note" data-icon="plus" data-iconpos="top">Note</a></li>
 					<li><a href="#news" data-icon="star"  data-iconpos="left"  >News</a></li>
 				  </ul>
 			  </div>
@@ -317,7 +318,8 @@
 			   <div data-role="navbar" data-position="fixed">
 				  <ul>
 					<li><a href="#home" data-icon="home" data-iconpos="left" >Home</a></li>
-				    <li><a href="#note" data-icon="plus" data-iconpos="top" >Note</a></li>
+					<li><a href="#" data-icon="info"  data-iconpos="left"  data-theme="a">About</a></li>
+					<li><a href="#note" data-icon="plus" data-iconpos="top" >Note</a></li>
 					<li><a href="#news" data-icon="star"  data-iconpos="left" >News</a></li>
 				  </ul>
 			  </div>
@@ -380,7 +382,10 @@
 				<ul>
 					<li><a href="#home" data-icon="home">Home</a></li>
 					<li><a href="#about" data-icon="info"  data-iconpos="left">About</a></li>
-				    <li><a href="#note" data-icon="plus" data-iconpos="top" data-theme="e">Note</a></li>
+				    <li><a href="#note" data-icon="plus" data-iconpos="top">Note</a></li>
+					<li><a href="#news" data-icon="star"  data-iconpos="left"  data-theme="a">News</a></li>
+
+				    
 				</ul>
 			</div>
 		</div>
@@ -459,19 +464,21 @@
 						</div>
 		                     
 					   <!-- **SAVE,CLEAR, DISPLAY AND ADD NEW BUTTON** -->
-	  	   				<input type="submit" id="save" value="Save Note" data-theme="e" />
-	        				<div class="ui-grid-a" style="text-align:center">
-                    		<div class="ui-block-a">
-                     			<a href="#" id="displayLink" data-role="button" data-mini="true" data-theme="a" data-ajax="false">Display</a>
-                   		    </div>
+	  	   	<input type="submit" id="save" value="Submit Note" data-theme="e" />
+	        	<div class="ui-grid-a" style="text-align:center">
+                    <div class="ui-block-a">
+                        <a href="#" id="displayLink" data-role="button" data-mini="true" data-theme="" >Display</a>
+                    </div>
                     
                     <div class="ui-block-b">
-                        <a href="#" id="clearLink" data-role="button" data-mini="true" data-theme="a" data-ajax="false">Clear</a>
-                        <a href="#" id="addNew" style="display:none;" data-ajax="false">Add New Note</a>
-
-					</div>
-					</form>
-    			</div>
+                        <a href="#" id="clearLink" data-role="button" data-mini="true" data-theme="a">Clear</a>
+                        <a href="#" id="addNew" style="display:none;" >Add New Note</a>
+                    </div>
+			</form>
+        	<div id="listN">
+        	</div>
+        	
+        </div> <!-- content -->
      <!-- End of Note Form -->
      
      <!-- Save Type Footer -->
@@ -479,6 +486,7 @@
 				  <ul>
 				  	<li><a href="#home" data-icon="home">Home</a></li>
 					<li><a href="#about" data-icon="info"  data-iconpos="left"  >About</a></li>
+				  	<li><a href="#" data-icon="plus" data-iconpos="top" data-theme="a">Note</a></li>
 					<li><a href="#news" data-icon="star"  data-iconpos="left"  >News</a></li>
 				  </ul>
 			  </div>
