@@ -55,11 +55,11 @@
              selectLi = $('<select>'),
              makeSelect = $('<select>');
              makeSelect.attr("id", "friends");
-          for(var i=0; i<friendType.length; i++){
+          for(var i=0, j=friendType.each; i<j; i++){
               var makeOption = $('option');
               var optText = friendType[i]; //Saying this is not defined, causing error in local storage
               makeOption.attr("value", optText);
-              makeOption.text = optText;
+              makeOption.text = (optText);
               makeSelect.append(makeOption);    
           }
       };
@@ -119,8 +119,8 @@
          getSelectedRadio();
          //getCheckboxValue();
          var item          	    = {};
-         	 item.friend	  	= ["Choose A Friend:", $("#friends").value];
-             item.importance 	= ["Importance:", importanceValue];
+         	 item.friend	  	= ["Choose A Friend:", $("#friend").value];
+             item.important 	= ["How important is this:", importantValue];
              item.favorite   	= ["Is right friend:", favoriteValue];
              item.reminder		= ["Reminder:", $("reminder").value];
              item.date     		= ["Date:", $("#date").value];
@@ -148,10 +148,10 @@
          makeDiv.attr("id", "items");
          var makeList = $("<ul>");
          makeDiv.append(makeList);
-         $("#listN").append(makeDiv);
+         $("#listN").append(makeDiv); //doc.body.append
          // Set 'items' display
          $("#items").show();
-         	 for(var i = 0, len=localStorage.length; i < len; i++){
+         	 for(var i = 0, len=localStorage.each; i < len; i++){
              	var makeLi = $("<li>");
              	var linksLi = $("<li>");
              	makeList.append(makeLi);
@@ -229,7 +229,7 @@
     		toggleControls("off ");
     		
     		//Populate form fields with the current localStorage values.
-    		$('friends').val    = item.friend[1];
+    		$('friend').val    = item.friend[1];
 			 var radios         = $('input:radio[name="important"]:checked').val();
     	    $("favorite").val   = item.favorite[1];//checkbox
     		$('reminder').val   = item.reminder[1];
@@ -331,11 +331,10 @@
 
      //Variable Defaults
      var friendType = ["--Choose Friend--", "Girlfriend", "Boyfriend", "Fiance", "Friend", "Sibling", "Parent", "Other"];
-    		var importanceValue;
-    	    favoriteValue = "No",
-    	     errMsg = $("#errors");
-    
-    makeField();
+     var importantValue;
+     var favoriteValue = "No";
+     var errMsg = $("#errors");
+     makeField();
   
 var displayLink = $('#displayLink');
 displayLink.on("click", getData);
@@ -343,5 +342,5 @@ displayLink.on("click", getData);
 var clearLink = $('#clearLink');
 clearLink.on("click", clearLocal);
 
-var submit = $("#save");
-submit.on("click", storeData);
+var save = $("#save");
+save.on("click", storeData);
