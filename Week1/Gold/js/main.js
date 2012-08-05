@@ -135,6 +135,7 @@
 
   //Create visiable storage
   //getData 
+  
 			var getData = function(){
 //console.log("id");
 				$("#notepage").empty();
