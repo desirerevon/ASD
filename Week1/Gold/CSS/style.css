@@ -25,7 +25,7 @@ label.error{display:block; margin:1px 0; color:#cc0000;}
 
 #logo{
 background-image:url('../images/deep.png');
-background-repeat:no-repeat;
+background-repeat:center;
 }
 
 #fieldcontain{
