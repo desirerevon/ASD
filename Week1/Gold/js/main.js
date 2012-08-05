@@ -122,7 +122,7 @@
          	 item.friend	  	= ["Choose A Friend:", $("#friend").value];
              item.important 	= ["How important is this:", importantValue];
              item.favorite   	= ["Is right friend:", favoriteValue];
-             item.reminder		= ["Reminder:", $("reminder").value];
+             item.reminder		= ["Reminder:", $("#reminder").value];
              item.date     		= ["Date:", $("#date").value];
              item.notes       	= ["Note:", $("#notes").value];
           //Save data into local storage. Use stringify to convert object to a string(local storage only stores strings). 
@@ -134,6 +134,7 @@
 		};
 
   //Create visiable storage
+  //getData 
 			var getData = function(){
 //console.log("id");
 				$("#notepage").empty();
@@ -157,7 +158,7 @@
              	makeList.append(makeLi);
              	var key = localStorage.key(i);
              	var value = localStorage.getItem(key);
-             //Convert the string from local storage value back to an object using JSON.parse()
+//Convert the string from local storage value back to an object using JSON.parse()
              	var obj = JSON.parse(value);
              	var makeSubList = $("<ul>");
              	makeLi.append(makeSubList);
@@ -172,16 +173,7 @@
              	makeItemLinks(localStorage.key(i), linksLi); //Create edit and delete buttons/links for each item in local storage.
          }
      };
-      //Get the image for the right friend that's being displayed.
-   // function getImage(imgName, makeSubList) {
-//  		var imageLi = document.createElement('li');
-//  		makeSubList.appendChild(imageLi);
-//  		var newImage = document.createElement('img');
-//  		var setSrc = newImage.setAttribute("src", "images/" + imgName + ".png");
-//  		newImage.style.paddingTop = "10px";
-//  		imageLi.appendChild(newImage);
-//  	}
-      
+    
   	  // Autofill test data
    		function autoFillData(json){
 
@@ -229,12 +221,12 @@
     		toggleControls("off ");
     		
     		//Populate form fields with the current localStorage values.
-    		$('friend').val    = item.friend[1];
-			 var radios         = $('input:radio[name="important"]:checked').val();
-    	    $("favorite").val   = item.favorite[1];//checkbox
-    		$('reminder').val   = item.reminder[1];
-    		$('date').val       = item.date[1];
-    		$('notes').val      = item.notes[1];
+    		$('#friend').val     = item.friend[1];
+			 var radios          = $('input:radio[name="important"]:checked').val();
+    	    $("#favorite").val   = item.favorite[1];//checkbox
+    		$('#reminder').val   = item.reminder[1];
+    		$('#date').val       = item.date[1];
+    		$('#notes').val      = item.notes[1];
     		
     		//Remove the inital listener from the input "save note" button 
 			save.off("click", storeData);
@@ -244,6 +236,7 @@
     		//Save the key value established in this function as a property of the edit submit event
     		//So we can use that value when we save the data edited
 			save.one("click", function(){
+			//console.log("save called");
     	 storeData(thiskey);
   });
   
@@ -274,60 +267,6 @@
  		}
  	}
  
-    	
-//      	//Validate form fields to reuse storeData function, modify and edit not save
-//     	function validate(e){ // e stands for event data
-//     		var getFriend   = $("#friends");
-//     	
-//      		
-//     		//Reset Error Messages 
-//     		errMsg.text ="";
-//     		getFriend.style.border = "1px solid black";
-//     		//getUsername.style.border = "1px solid black"; 
-//   		
-//     		//Get Error Messages; Store in an array to display them all on screen
-//     		var messageAry =[];
-//      		
-//     		//Friend Validation 
-//     		if(getFriend.value==="--Choose Friend--"){
-//     			var friendError = "Please choose a friend";
-//     			getFriend.style.border = "1px solid red";
-//     			messageAry.push(friendError);
-// 			}
-//     		
-// 							//Username Validation
-// 						// var re = /^[A-Za-z0-9_]{6,8}ge/;
-// 				//     		//User name can inlcuded Capital letter, lowercase letters, numbers and an _ . 
-// 				//     		 if(!re.exec(getUsername.value)){
-// 				//     			var usernameError = "Please enter a valid username";
-// 				//     			getUsername.style.border = "1px solid red"; 
-// 				//     			messageAry.push(usernameError);
-// 				//      		}
-// 
-// 							//Password Validation
-// 						// if(getPassword.value=== ""){
-// 				//  			var passwordError = "Please enter your Password.";
-// 				//  			getPassword.style.border = "1px solid red";
-// 				//  			messageAry.push(passwordError);
-// 				//  		}
-// 				//    		
-// 							//If there are errors display them on the screen
-// 							//If there were errors, display them on the screen
-//  		if(messageAry.length >= 1){
-//  			for(var i=0, j=messageAry.length; i < j; i++){
-//  				var txt = document.createElement('li');
-//  				txt.innerHTML = messageAry[i];
-//  				errMsg.appendChild(txt);
-//  			}
-//     			e.preventDefault();
-//     		return false;
-//     		}else{
-//     			//If all is ok save our data! Send the key value that came from edit data function
-//     			//Remember key value passed through editSubmit listener as a property
-//     			storeData(this.key);
-// 			}
-//      		
-//      }
 
      //Variable Defaults
      var friendType = ["--Choose Friend--", "Girlfriend", "Boyfriend", "Fiance", "Friend", "Sibling", "Parent", "Other"];

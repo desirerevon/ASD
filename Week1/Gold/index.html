@@ -45,7 +45,7 @@
         
         </br>
         
-        <!-- Firs Page User Will See Feature -->
+        <!-- First Page User Will See Feature -->
         
         <div style="text-align:center">
              <a href="#home"><img src="images/remLogo.png"/></a>
@@ -412,7 +412,7 @@
 			
 					<!-- **DROP DOWN** -->
 					<div id="friend" data-role="fieldcontain">
-						<label for="friend" class="select"class="required" >*Choose A Friend:</label>
+						<label for="friend" class="select" class="required" >*Choose A Friend:</label>
 						<select name="friend" id="friend" data-mini="true">
 							<option value="boy">Boyfriend</option>
 							<option value="girl">Girlfriend</option>
@@ -427,35 +427,35 @@
 					    <!-- **CHECKBOX** -->
 					    <div id="favorite" data-role="fieldcontain">
 							<fieldset data-role="controlgroup">
-							 <legend>Did you select the right friend?</legend>
-								<input type="checkbox" name="checkbox-1" id="favorite" class="custom" checked="checked"/>
+							 <legend>*Did you select the right friend?</legend>
+								<input type="checkbox" name="checkbox-1" id="favorite" class="custom" checked="checked" class="required date"/>
 								<label for="favorite">Yes</label>
 							</fieldset>
 						</div>
 				
 					   <!-- **TEXT FIELD** -->
 					    <div id="notes" data-role="fieldcontain">
-							<label for="notes">Notes:</label>
+							<label for="notes">*Notes:</label>
 							<textarea name="notes" id="notes" placeholder="Your note goes here" class="required"></textarea>
 						</div>
 			
 					   <!-- **RADIO BUTTON** -->
 					<div id="important" data-role="fieldcontain">
   				  <fieldset data-role="controlgroup">
-    					<legend>How important is this:</legend>
-         				<input type="radio" name="important" id="important" value="Really important" checked="checked" />
-         	            <label for="important">Really important</label>
+    					<legend>*How important is this:</legend>
+         				<input type="radio" name="important" id="important" value="Really important" checked="checked" class="required date" />
+         	            <label for="important" >Really important</label>
 
          	            <input type="radio" name="important" id="important2" value="I cant remember everything"  />
-         	            <label for="important2">I cant remember everything</label>
+         	            <label for="important2" class="required" >I cant remember everything</label>
 				</fieldset>
 		</div>
 
 			
 					   <!-- **SLIDER** -->
 						<div id="reminder" data-role="fieldcontain">
-	        		      <label for="reminder">*Remind Me This Many Times:</label>
-	        		      <input type="range" name="reminder" id="reminder" placeholder="0" min="1" max="10"/>
+	        		      <label for="reminder" class="required" >*Remind Me This Many Times:</label>
+	        		      <input type="range" name="reminder" id="reminder" placeholder="0" min="1" max="10" class="required date"/>
 
 				      <!-- **DATE** -->
 						</div id="date" data-role="fieldcontain">	
@@ -472,7 +472,7 @@
                     
                     <div class="ui-block-b">
                         <a href="#" id="clearLink" data-role="button" data-mini="true" data-theme="a">Clear</a>
-                        <a href="#" id="addNew" style="display:none;" >Add New Note</a>
+                        <a href="#" id="addNew" style="display:none;" data-ajax="false">Add New Note</a>
                     </div>
 						</form>
         			<div id="listN">
@@ -506,6 +506,7 @@
         <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
         <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
         <script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
+         <script src="js/JSON.js" type="text/javascript"></script>
         <script src="js/main.js" type="text/javascript"></script>
       
 
