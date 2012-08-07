@@ -1,11 +1,33 @@
-//Form: Note Page
-				var parseNoteForm = function(data) {
-//uses form data here;
+$("#logo").on('pageinit', function){
+		   //code for logo goes here
+		   
+		   
+		}
+		
+$("#home").on('pageinit', function){
+		   //code for home goes here
+		
+		}
+		
+$("#friendtype").on('pageinit', function){
+		   //code for friendtype goes here
+		
+		}
+		
+$("#prioritytype").on('pageinit', function){
+		   //code for prioritytype goes here
+		
+		}
+		
+$("#notetype").on('pageinit', function){
+		   //code for notetype goes here
+		
+		}
 
-//console.log(data);
-		};
 
-		$(document).bind('pageinit', function(){
+
+
+$("#note").on('pageinit', function(){
 
 			var nform = $('#noteform');
 
@@ -15,38 +37,15 @@
 				submitHandler: function() {
 					var data = nform.serializeArray();
 					parseNoteForm(data);
-				}
-			});
-
-		});
+				},
 		
 		
-		// $("#logo").on('pageinit', function){
-// 		   //code for logo goes here
-// 		   
-// 		   
-// 		}
-// 		
-// 		$("#home").on('pageinit', function){
-// 		   //code for home goes here
-// 		
-// 		}
-// 		
-// 		$("#friendtype").on('pageinit', function){
-// 		   //code for friendtype goes here
-// 		
-// 		}
-// 		
-// 		$("#prioritytype").on('pageinit', function){
-// 		   //code for prioritytype goes here
-// 		
-// 		}
-// 		
-// 		$("#notetype").on('pageinit', function){
-// 		   //code for notetype goes here
-// 		
-// 		}
-
+		
+     //Variable Defaults
+     var friendType = ["--Choose Friend--", "Girlfriend", "Boyfriend", "Fiance", "Friend", "Sibling", "Parent", "Other"];
+     var importantValue;
+     var favoriteValue = "No";
+     var errMsg = $("#errors");
 
  
      //Create select field element and populate with options.
@@ -135,9 +134,11 @@
 
   //Create visiable storage
   //getData 
+  
 			var getData = function(){
 //console.log("id");
-				$("#notepage").empty();
+
+				$("#notepage").get();
 				toggleControls("on");
 				if(localStorage.length === 0){
 						alert("There is no data in Local Storage so default data was added.");
@@ -218,7 +219,7 @@
 			    var item = JSON.parse(value);
     		
     		//Show the form so we can edit item.
-    		toggleControls("off ");
+    		toggleControls("on");
     		
     		//Populate form fields with the current localStorage values.
     		$('#friend').val     = item.friend[1];
@@ -237,7 +238,7 @@
     		//So we can use that value when we save the data edited
 			save.one("click", function(){
 			//console.log("save called");
-    	 storeData(thiskey);
+    	  storeData(thiskey);
   });
   
   				editSubmit.attr("key", this.key);
@@ -268,11 +269,6 @@
  	}
  
 
-     //Variable Defaults
-     var friendType = ["--Choose Friend--", "Girlfriend", "Boyfriend", "Fiance", "Friend", "Sibling", "Parent", "Other"];
-     var importantValue;
-     var favoriteValue = "No";
-     var errMsg = $("#errors");
      makeField();
   
 var displayLink = $('#displayLink');
@@ -283,3 +279,5 @@ clearLink.on("click", clearLocal);
 
 var save = $("#save");
 save.on("click", storeData);
+
+};
