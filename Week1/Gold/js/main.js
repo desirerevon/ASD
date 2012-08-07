@@ -4,22 +4,22 @@ $("#logo").on('pageinit', function){
 		   
 		}
 		
-		$("#home").on('pageinit', function){
+$("#home").on('pageinit', function){
 		   //code for home goes here
 		
 		}
 		
-		$("#friendtype").on('pageinit', function){
+$("#friendtype").on('pageinit', function){
 		   //code for friendtype goes here
 		
 		}
 		
-		$("#prioritytype").on('pageinit', function){
+$("#prioritytype").on('pageinit', function){
 		   //code for prioritytype goes here
 		
 		}
 		
-		$("#notetype").on('pageinit', function){
+$("#notetype").on('pageinit', function){
 		   //code for notetype goes here
 		
 		}
@@ -27,14 +27,7 @@ $("#logo").on('pageinit', function){
 
 
 
-//Form: Note Page
-				var parseNoteForm = function(data) {
-//uses form data here;
-
-//console.log(data);
-		};
-
-		$(document).on('pageinit', function(){
+$("#note").on('pageinit', function(){
 
 			var nform = $('#noteform');
 
