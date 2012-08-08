@@ -2,27 +2,27 @@ $("#logo").on('pageinit', function){
 		   //code for logo goes here
 		   
 		   
-		}
+		};
 		
 $("#home").on('pageinit', function){
 		   //code for home goes here
 		
-		}
+		};
 		
 $("#friendtype").on('pageinit', function){
 		   //code for friendtype goes here
 		
-		}
+		};
 		
 $("#prioritytype").on('pageinit', function){
 		   //code for prioritytype goes here
 		
-		}
+		};
 		
 $("#notetype").on('pageinit', function){
 		   //code for notetype goes here
 		
-		}
+		};
 
 
 
@@ -176,12 +176,13 @@ $("#note").on('pageinit', function(){
      };
     
   	  // Autofill test data
-   		function autoFillData(json){
-
-				 	for(var n in json){
+   		function autoFillData(){
+					//Store JSON Object into local storage
+				   $.each(json,function(key, value){
+				   		console.log("alert")
 						var id = Math.floor(Math.random()*100000001);
-					localStorage.setItem(id, JSON.stringify(json[n]));
-			}
+					localStorage.setItem(id, JSON.stringify(json[key]));
+			});
 		}
 
       
