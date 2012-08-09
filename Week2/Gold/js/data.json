@@ -1,0 +1,48 @@
+{
+
+ "notes": [
+		  {
+			  "friend":  "Boyfriend",
+		   "important":  "Really Important",
+			"favorite":  "Yes",
+			"reminder": "7",
+			   "date" : "2012-05-24",
+			   "notes": "Ring Size 9"
+		
+		  },
+		  {
+		  "friend": "Girlfriend",
+	   "important": "I can't remember everything",
+	    "favorite": "Yes",
+	    "reminder": "10",
+	       "date" : "2012-07-05",
+	       "notes": "favorite color pink"
+		 },
+		 {
+		  "friend": "Parent",
+	   "important": "Really Important",
+	    "favorite": "Yes",
+	    "reminder": "10",
+	       "date" : "2013-08-03",
+	       "notes": "Moms birthday is December 13th"
+		
+		 },
+		 {
+		"friend"  : "Friend",
+	   "important": "Really Important",
+	    "favorite": "Yes",
+	    "reminder": "4",
+	       "date" : "2012-05-31",
+	       "notes": "Lili loves Antiques"
+		},
+		{
+		  "friend": "Fiance",
+	   "important": "I can't remember everything",
+	    "favorite": "Yes",
+	    "reminder": "10",
+	       "date" : "2012-06-08",
+	       "notes": "favorite song Return of the Mack"
+		}
+	
+	]
+}

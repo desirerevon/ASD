@@ -1,8 +1,6 @@
 var  json = {
 	"notebook1": {
 		"friend"  : ["Friend:", "Boyfriend"],
-		"userName": ["Username:", "Desire"],
-		"password": ["Password:", "mypass"],
 	  "importance": ["Importance:", "Really Important"],
 	    "favorite": ["Is right friend:", "Yes"],
 	    "reminder": ["Reminder:", "7"],
@@ -13,8 +11,6 @@ var  json = {
 
 	"notebook2": {
 		  "friend": ["Friend:", "Girlfriend"],
-		"userName": ["Username:", "David"],
-		"password": ["Password:", "hispass"],
 	  "importance": ["Importance:", "I can't remember everything"],
 	    "favorite": ["Is right friend:", "Yes"],
 	    "reminder": ["Reminder:", "10"],
@@ -25,8 +21,6 @@ var  json = {
 
 	"notebook3": {
 		  "friend": ["Friend:", "Parent"],
-		"userName": ["Username:", "Dominique"],
-		"password": ["Password:", "herpass"],
 	  "importance": ["Importance:", "Really Important"],
 	    "favorite": ["Is right friend:", "Yes"],
 	    "reminder": ["Reminder:", "10"],
@@ -37,8 +31,6 @@ var  json = {
 
 	"notebook4": {
 		"friend"  : ["Friend:", "Friend"],
-		"userName": ["Username:", "Diana"],
-		"password": ["Password:", "dpass"],
 	  "importance": ["Importance:", "Really Important"],
 	    "favorite": ["Is right friend:", "Yes"],
 	    "reminder": ["Reminder:", "4"],
@@ -49,8 +41,6 @@ var  json = {
 
 	"notebook5": {
 		  "friend": ["Friend:", "Fiance"],
-		"userName": ["Username:", "Quintin"],
-		"password": ["Password:", "fipass"],
 	  "importance": ["Importance:", "I can't remember everything"],
 	    "favorite": ["Is right friend:", "Yes"],
 	    "reminder": ["Reminder:", "10"],
@@ -61,8 +51,6 @@ var  json = {
 	
 	"notebook6": {
 		  "friend": ["Friend:", "Sibling"],
-		"userName": ["Username:", "Vincent"],
-		"password": ["Password:", "sibpass"],
 	  "importance": ["Importance:", "I can't remember everything"],
 	    "favorite": ["Is right friend:", "Yes"],
 	    "reminder": ["Reminder:", "10"],
@@ -74,8 +62,6 @@ var  json = {
 
 	"notebook7": {
 		  "friend": ["Friend:", "Other"],
-		"userName": ["Username:", "Abby"],
-		"password": ["Password:", "Opass"],
 	  "importance": ["Importance:", "Really Important"],
 	    "favorite": ["Is right friend:", "Yes"],
 	    "reminder": ["Reminder:", "10"],
@@ -86,8 +72,6 @@ var  json = {
 	
 	"notebook8": {
 		"friend"  : ["Friend:", "Boyfriend"],
-		"userName": ["Username:", "Lily"],
-		"password": ["Password:", "lilpass"],
 	  "importance": ["Importance:", "Really Important"],
 	    "favorite": ["Is right friend:", "Yes"],
 	    "reminder": ["Reminder:", "5"],
@@ -98,8 +82,6 @@ var  json = {
 
 	"notebook9": {
 		  "friend": ["Friend:", "Girlfriend"],
-		"userName": ["Username:", "Geaorge"],
-		"password": ["Password:", "Gpass"],
 	  "importance": ["Importance:", "I can't remember everything"],
 	    "favorite": ["Is right friend:", "Yes"],
 	    "reminder": ["Reminder:", "10"],
@@ -110,8 +92,6 @@ var  json = {
 
 	"notebook10": {
 		  "friend": ["Friend:", "Parent"],
-		"userName": ["Username:", "Averell"],
-		"password": ["Password:", "Avpass"],
 	  "importance": ["Importance:", "Really Important"],
 	    "favorite": ["Is right friend:", "Yes"],
 	    "reminder": ["Reminder:", "4"],
@@ -122,8 +102,6 @@ var  json = {
 
 	"notebook11": {
 		"friend"  : ["Friend:", "Friend"],
-		"userName": ["Username:", "Nate"],
-		"password": ["Password:", "Npass"],
 	  "importance": ["Importance:", "Really Important"],
 	    "favorite": ["Is right friend:", "Yes"],
 	    "reminder": ["Reminder:", "2"],
@@ -134,8 +112,6 @@ var  json = {
 
 	"notebook12": {
 		  "friend": ["Friend:", "Fiance"],
-		"userName": ["Username:", "Lela"],
-		"password": ["Password:", "Lelapass"],
 	  "importance": ["Importance:", "I can't remember everything"],
 	    "favorite": ["Is right friend:", "Yes"],
 	    "reminder": ["Reminder:", "10"],
@@ -146,8 +122,6 @@ var  json = {
 	
 	"notebook13": {
 		  "friend": ["Friend:", "Sibling"],
-		"userName": ["Username:", "Imani"],
-		"password": ["Password:", "Imanpass"],
 	  "importance": ["Importance:", "I can't remember everything"],
 	    "favorite": ["Is right friend:", "Yes"],
 	    "reminder": ["Reminder:", "6"],
@@ -159,8 +133,6 @@ var  json = {
 
 	"notebook14": {
 		  "friend": ["Friend:", "Other"],
-		"userName": ["Username:", "Lisa"],
-		"password": ["Password:", "LiSpass"],
 	  "importance": ["Importance:", "Really Important"],
 	    "favorite": ["Is right friend:", "Yes"],
 	    "reminder": ["Reminder:", "2"],
@@ -171,8 +143,6 @@ var  json = {
 	
 		"notebook15": {
 		  "friend": ["Friend:", "Girlfriend"],
-		"userName": ["Username:", "Dred"],
-		"password": ["Password:", "Drepass"],
 	  "importance": ["Importance:", "I can't remember everything"],
 	    "favorite": ["Is right friend:", "Yes"],
 	    "reminder": ["Reminder:", "10"],
@@ -183,8 +153,6 @@ var  json = {
 
 	"notebook16": {
 		  "friend": ["Friend:", "Parent"],
-		"userName": ["Username:", "Londyn"],
-		"password": ["Password:", "Londpass"],
 	  "importance": ["Importance:", "Really Important"],
 	    "favorite": ["Is right friend:", "Yes"],
 	    "reminder": ["Reminder:", "9"],
@@ -195,8 +163,6 @@ var  json = {
 
 	"notebook17": {
 		"friend"  : ["Friend:", "Friend"],
-		"userName": ["Username:", "Trisha"],
-		"password": ["Password:", "TrisHpass"],
 	  "importance": ["Importance:", "Really Important"],
 	    "favorite": ["Is right friend:", "Yes"],
 	    "reminder": ["Reminder:", "4"],
@@ -207,8 +173,6 @@ var  json = {
 
 	"notebook18": {
 		  "friend": ["Friend:", "Fiance"],
-		"userName": ["Username:", "Maya"],
-		"password": ["Password:", "Mapass"],
 	  "importance": ["Importance:", "I can't remember everything"],
 	    "favorite": ["Is right friend:", "Yes"],
 	    "reminder": ["Reminder:", "5"],
@@ -219,8 +183,6 @@ var  json = {
 	
 	"notebook19": {
 		  "friend": ["Friend:", "Sibling"],
-		"userName": ["Username:", "Marcus"],
-		"password": ["Password:", "MARcpass"],
 	  "importance": ["Importance:", "I can't remember everything"],
 	    "favorite": ["Is right friend:", "Yes"],
 	    "reminder": ["Reminder:", "9"],
@@ -232,8 +194,6 @@ var  json = {
 
 	"notebook20": {
 		  "friend": ["Friend:", "Other"],
-		"userName": ["Username:", "James"],
-		"password": ["Password:", "JayZpass"],
 	  "importance": ["Importance:", "Really Important"],
 	    "favorite": ["Is right friend:", "Yes"],
 	    "reminder": ["Reminder:", "6"],
