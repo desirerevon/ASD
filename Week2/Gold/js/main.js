@@ -6,7 +6,7 @@ $("#noteForm").validate({
 	
  // SAVE MY DATA!!
 
-$('#save').on('click', function saveData(id) {
+$('#submit').on('click', function saveData(id) {
     var d = new Date();
     var friend = $("#friend").val();
     var important = $("#important").val();
@@ -15,14 +15,14 @@ $('#save').on('click', function saveData(id) {
     var note = $("#note").val();
 	var favorite;
     if ($('#favorite').is(":checked")){
-	favorite = "Yes"
+	favorite = "Yes";
 	}else{
-	favorite = "No"
+	favorite = "No";
 	}
     var item = [
-    friend, important, favorite, reminder, date, notes];
+    friend, important, favorite, reminder, date, note];
 
-    localStorage.setItem(key, item);
+    //localStorage.setItem(key, item);
     location.reload();
     alert("Note Saved!");
 });	
@@ -91,12 +91,12 @@ function editItem(id) {
 	$('#friend').val(friend);
     $('#important').val(important);
     $('#reminder').val(reminder);
-    $('#date').val(dates);
+    $('#date').val(date);
     $('#notes').val(notes);
 	if ($('#favorite').is(":checked")){
-	feature = "Yes"
+	feature = "Yes";
 	}else{
-	feature = "No"
+	feature = "No";
 	}
 	// show edit item button, hide submit button
     var editButton = $('#edit-item-button').css('display', 'block');
@@ -112,9 +112,9 @@ function editItem(id) {
         var notes = $('#notes').val();
 		var favorite;
         if ($('#favorite').is(":checked")){
-		favorite = "Yes"
+		favorite = "Yes";
 		}else{
-		favorite = "No"
+		favorite = "No";
 		}
         var item = [
     	friend, important, favorite, reminder, date, notes];
@@ -159,9 +159,8 @@ function clearLocal() {
 
 //JSON
 //Most data is by default dynamic but my vars can change at any time so i set to dynamic
-$('#json').on('click', function)()){
+$('#json').bind('click', function(){
 	$('#notedata').empty();
-	$('<p>').html('JSON').appendTo('#notedata');
 	$.ajax({
 		async:false,
 		url:'xhr/data.json',
@@ -190,7 +189,7 @@ $('#json').on('click', function)()){
 
 
 //XML
-$('#xml').on('click', function(){
+$('#xml').bind('click', function(){
 	$('#notedata').empty();
 	$('<p>').html('XML').appendTo('#notedata');
 	$.ajax({
@@ -224,7 +223,7 @@ $('#xml').on('click', function(){
 
 
 //CSV DATA
-$('#csv').on('click', function(){
+$('#csv').bind('click', function(){
 	$('#notedata').empty();
 	$('<p>').html('CSV').appendTo('#notedata');
 	 $.ajax({
@@ -237,7 +236,7 @@ $('#csv').on('click', function(){
     		var lines = []; // main array 
 
 			for (var i=1; i<allTextLines.length; i++) {
-				var data = allTextLines[i].split(',');
+				data = allTextLines[i].split(',');
 				if (data.length == headers.length) {
 					var notes = []; // blank array 
 
@@ -253,12 +252,12 @@ $('#csv').on('click', function(){
 				var dnote = lines[m];
 			$(''+
 					'<div class="notetitle">'+
-						'<p>Friend: '+ dfriend[0] +'</p>'+
-						'<p>Important: '+ dimportant[1] +'</p>'+
-						'<p>Favorite: '+ dfriend[2] +'</p>'+
-						'<p>Reminder: '+ dreminder[3] +'</p>'+
-						'<p>Date: '+ ddate[4] +'</p>'+
-						'<p>Notes: '+ dnotes[5] +'</p>'+
+						'<p>Friend: '+ dnote[0] +'</p>'+
+						'<p>Important: '+ dnote[1] +'</p>'+
+						'<p>Favorite: '+ dnote[2] +'</p>'+
+						'<p>Reminder: '+ dnote[3] +'</p>'+
+						'<p>Date: '+ dnote[4] +'</p>'+
+						'<p>Notes: '+ dnote[5] +'</p>'+
 					'</div>'
 				).appendTo('#notedata');
 			console.log(lines);	
