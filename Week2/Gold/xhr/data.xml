@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<notes xml: lang=""EN>
+
+		<note>
+		  		<friend>Sibling</friend>
+	  			<important>I can't remember everything</important>
+	    		<favorite>Yes<favorite>
+	    		<reminder>10</reminder>
+	       		<date>06/25/2012</date>
+	       		<notes>Dom likes white roses</notes>
+	    </note>
+		
+		<note>
+		  		<friend>Boyfriend</friend>
+	  			<important>I can't remember everything</important>
+	    		<favorite>Yes<favorite>
+	    		<reminder>2</reminder>
+	       		<date>12/25/2012</date>
+	       		<notes>Bring car in for oil change</notes>
+	    </note>
+		
+		<note>
+		  		<friend>Friend</friend>
+	  			<important>Really important</important>
+	    		<favorite>Yes<favorite>
+	    		<reminder>8</reminder>
+	       		<date>10/5/2012</date>
+	       		<notes>Return costume</notes>
+	    </note>
+		
+		<note>
+		  		<friend>Sibling</friend>
+	  			<important>I can't remember everything</important>
+	    		<favorite>Yes<favorite>
+	    		<reminder>3</reminder>
+	       		<date>09/09/12</date>
+	       		<notes>Take brother for drivers test</notes>
+	    </note>
+		
+		<note>
+		  		<friend>Parent</friend>
+	  			<important>I can't remember everything</important>
+	    		<favorite>Yes<favorite>
+	    		<reminder>1</reminder>
+	       		<date>03/2/2012</date>
+	       		<notes>Bring season back</notes>
+	    </note>
+		
+		<note>
+		  		<friend>Other</friend>
+	  			<important>I can't remember everything</important>
+	    		<favorite>Yes<favorite>
+	    		<reminder>10</reminder>
+	       		<date>12/1/12</date>
+	       		<notes>Party invites</notes>
+	    </note>
+</notes>
+		
+
+
+
+	

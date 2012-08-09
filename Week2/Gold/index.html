@@ -9,6 +9,10 @@
 	<meta charset="utf-8">
 
 	<title>iREM</title>
+	
+	<!--Description-->
+	<meta name="descrtiption" content="I Remember">
+	<meta name="keywords" content="html5, Full Sail University, notes, text, milk, reminder">
 
 	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
 	<meta name="HandheldFriendly" content="True">
@@ -21,8 +25,6 @@
 	<!-- StyleSheets under here -->
 	<link rel="stylesheet" href="CSS/style.css" />
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
-
-
 
 	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
 	<script src="js/libs/modernizr.custom.min.js"></script>
@@ -75,6 +77,31 @@
 		<div>
 				<a href="#signin" rel="external" ><img class="imgSize" src="images/Feature.png" /></a>
 		</div>
+		
+			
+		<!-- STATIC DATA BUTTONS -->
+		<div id="getdata" data-role="fieldcontain">
+				<div id="get-data-buttons">
+					<div class="ui-grid-b">
+						<p style="text-align: center;">Save some data!</p>
+						<div class="ui-block-a">
+							<a href="#" data-role="button" data-theme="b" id="json">JSON</a>
+						</div>
+
+						<div class="ui-block-b">
+							<a href="#" data-role="button" data-theme="b" id="xml">XML</a>
+						</div>
+
+						<div class="ui-block-c">
+							<a href="#" data-role="button" data-theme="b" id="csv">CSV</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="notedata"></div>
+        
+
+	
 
 		<!-- Home Content -->
 		<div data-role="content">
