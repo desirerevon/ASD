@@ -162,6 +162,7 @@ $('#jsonB').on('click', function(){
 		type: 'GET',
 		dataType: 'json',
 		success: function(response){
+				//console.log(response.notes[0]);
 		for(var i=0, j=response.notes.length; i<j; i++){
 	            var ndata  = response.notes[i];
 	            $(''+
@@ -222,7 +223,7 @@ $('#xmlB').on('click', function(){
 $('#csvB').on('click', function(){
 	$('#notes').empty();
 	$('#xmldiv').empty();
-	$('<p>').html('CSV Loaded').appendTo('#xmldiv');
+	$('<h3>').html('CSV Loaded').appendTo('#notedata');
 	$.ajax({
         type: "GET",
         url: "xhr/data.csv",
