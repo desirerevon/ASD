@@ -194,7 +194,7 @@ $('#xmlB').on('click', function(){
 		type: 'GET',
 		dataType: 'xml',
 		success: function(xml){
-			$(xml).find("notes").each(function(){
+			$(xml).find("note").each(function(){
    				var friend     = $(this).find('friend').text();
    				var important  = $(this).find('important').text();
    				var favorite   = $(this).find('favorite').text();
