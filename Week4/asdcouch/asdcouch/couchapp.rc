@@ -1,0 +1,11 @@
+{
+  "env": {
+    "default": {
+      "db": "http://127.0.0.1:5984/asdproject"
+    },
+    "cloudant"{
+    "db":"https://geoperepiestalmoncileans:4PfRo381NRdhe12Ou1Fn7cSG@desirerevon.cloudant.com/asdproject"
+    
+    }
+  }
+}
